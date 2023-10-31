@@ -1,0 +1,91 @@
+<!-- 
+
+    Ejercicio 7: Diseño de navegación
+●   Crear una barra de navegación horizontal con enlaces internos a diferentes secciones del ejercicio 5 y que contenga enlaces externos a sus redes sociales .
+●   Estilizar los enlaces de navegación para que cambien de color cuando se les haga clic.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <style>
+        header {
+              background: rgba(0,0,0,0.7);
+              width: 100%;
+              position: fixed;
+              z-index: 100;
+            }
+
+        nav {
+              float: left;
+            }
+
+        nav ul {
+              list-style: none;
+              overflow: hidden; 
+            }
+
+        nav ul li {
+              float: left;
+              font-family: Arial, sans-serif;
+              font-size: 16px;
+            }
+        nav ul li a {
+              display: block;
+              padding: 10px;
+              color: #fff;
+              text-decoration: none;
+            }
+        nav ul li:hover {
+              background: #eca023;
+            }
+
+            section {
+          display: flex;
+          width: 600px;
+          height: 430;
+          }
+
+        section img{
+          width: 0px;
+          flex-grow: 1;
+          object-fit: cover;
+          opacity: .8;
+          transition: 5s ease;
+        }
+        section img:hover {
+          cursor: crosshair;
+          width: 300px;
+          opacity: 1;
+          filter: contrast(120%);
+
+        }
+
+    </style>
+    <title>Mi primera pagina web</title>
+    <h1 >Hola, mundo! Soy Guerrero David </h1>
+</head>
+<header>
+    <nav>
+        <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="Ejercicio05.html">Ejercicio05</a></li>
+        <li><a href="https://www.facebook.com/?locale=es_LA">facebook</a></l>
+        <li><a href="https://www.tiktok.com/es/">tictok</a></li>
+        <li><a href="https://www.instagram.com/">instagram</a></li>
+     </ul>
+    </nav>
+</header>
+<br><br><br><br><br>
+<body>
+<section>
+  <img src="imagen1.jpg">
+  <img src="imagen2.jpg">
+  <img src="imagen3.jpg">
+  <img src="imagen4.jpg">
+</section>
+    
+</body>
+
+</html>
